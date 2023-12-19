@@ -27,6 +27,17 @@
     padding-bottom: 15px;
 }
 
+.lead::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    left: 25%;
+    right: 30%;
+    padding: 2px;
+    background-color: #c56161;
+}
+
 .container1 {
     width: 25rem; 
     height: 25rem;
