@@ -1,12 +1,39 @@
 :root {
     font-size: 12.8px; 
 }
+.containers {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.containers .rows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    border: 2px solid #d6d6d6;
+    border-radius: 15px;
+}
+
+.lead-cont {
+    position: relative;
+}
+
+.lead {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
 
 .container1 {
     width: 25rem; 
     height: 25rem;
     margin: 0.5rem auto;
-    background: #f9f9f9;
+    background: #ffffff;
     font-family: verdana;
     overflow: hidden;
 }
@@ -171,6 +198,15 @@ hr {
     transform: rotateY(180deg);
 }
 
+.index-desc {
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 20px;
+    padding-top: 30px;
+    font-size: 1.05rem;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     :root {
         font-size: 14.4px; 
@@ -192,5 +228,15 @@ hr {
 @media only screen and (min-width: 1201px) {
     :root {
         font-size: 18.432px; 
+    }
+}
+
+@media(max-width: 900px) {
+    .containers .rows {
+        flex-wrap: wrap;
+    }
+    .rows section.left, .rows section.right {
+        flex-basis: 100%;
+        margin: 0px;
     }
 }
