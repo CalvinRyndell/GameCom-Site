@@ -32,7 +32,7 @@
 .container1 {
     width: 25rem; 
     height: 25rem;
-    margin: 20px auto;
+    margin: 30px auto;
     background: #ffffff;
     font-family: verdana;
     overflow: hidden;
@@ -204,7 +204,7 @@ hr {
     margin: 15px;
     padding: 20px;
     padding-top: 30px;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
